@@ -440,3 +440,6 @@ margin: 0 auto;
 .footer-social-link:focus {
     background-color: #31d0aa;
 }
+.footer-social-link-ico {
+    fill: #f4f4fd;
+}
