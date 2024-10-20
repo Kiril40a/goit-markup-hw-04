@@ -81,7 +81,7 @@ margin: 0 auto;
 .studio {
     color: #2e2f42;
 }
-.menu {
+.menu  {
     display: flex;
     gap: 40px;
 }
@@ -101,6 +101,30 @@ margin: 0 auto;
 .menu_link:focus {
     color: #404BBF;
 }
+.menu_link::after {
+    content: '';
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    background-color: #404bbf;
+    position: absolute;
+    width: 48px;
+    height: 4px;
+}
+
+.first-svg-aection {
+    background-color: #f4f4fd;
+    width: 264px;
+    height: 112px;
+    gap: 24px;
+    padding-top: 24px;
+    padding-left: 100px;
+    border-radius: 4px;
+    border: 1px solid  #8e8f99;
+    margin-bottom: 8px;                     
+}
+
+
 .contacts {
     font-style: normal
 }
@@ -122,8 +146,14 @@ margin: 0 auto;
 
 .first-section {
     background-color: #2E2F42;
+    background-image: linear-gradient(0deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.4) 100%), url(../images/people-office.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
+
 }
 .main-title {
     color: white;
@@ -162,6 +192,13 @@ margin: 0 auto;
 
 .second-section {
     padding: 120px 0;
+    margin-bottom: 120px;
+
+}
+
+.team-svg {
+    fill:#4d5ae5;
+    
 }
 .second-section_list {
     display: flex;
@@ -215,8 +252,7 @@ margin: 0 auto;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-.team-section_image{
-}
+
 
 .team-section_card-desc {
     padding: 32px 0;
